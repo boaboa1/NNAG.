@@ -1,6 +1,6 @@
 local UserInputService = game:GetService("UserInputService")
 
-local speedScale = 15 -- Change this value to adjust the speed of the spinbot
+local speedScale = 20 -- Change this value to adjust the speed of the spinbot
 
 local isSpinbotEnabled = false
 
