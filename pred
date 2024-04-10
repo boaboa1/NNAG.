@@ -1,0 +1,10 @@
+    _G.PredictionBreaker = true
+
+    game.RunService.Heartbeat:Connect(function()
+        if _G.PredictionBreaker then    
+        local CurrentVelocity = game.Players.LocalPlayer.Character.HumanoidRootPart.Velocity
+        game.Players.LocalPlayer.Character.HumanoidRootPart.Velocity = Vector3.new(0,0,0)
+        game.RunService.RenderStepped:Wait()
+        game.Players.LocalPlayer.Character.HumanoidRootPart.Velocity = CurrentVelocity
+        end    
+    end)
